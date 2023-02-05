@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <style>
+
+        body {
+            background-color: rgb(34, 34, 34);
+            text-align: center;
+        }
+        .card {
+            margin: 100px auto 0 auto;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 6px solid #8b6565;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            filter: grayscale(1);
+            transition: 0.4s;
+        }
+
+        .card:hover img {
+            filter: none;
+            scale: 1.3;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <img src="jungle.jpg" alt="">
+    </div>
+
+</body>
+</html>
